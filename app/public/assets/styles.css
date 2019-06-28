@@ -1,0 +1,78 @@
+.jumbotron-fluid {
+    margin: 0;
+	padding: 7rem 0;
+    background: url(../assets/images/friends.jpg) no-repeat;
+    background-position: center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+.jumbotron-small {
+    padding: 4rem;
+    background: url(../assets/images/friends-sm.jpg) no-repeat;
+    background-position: top;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.centered {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.display-4 {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    color: #fff;
+    text-shadow:5px 5px 8px #000;
+}
+.survey-title {
+    font-size: 3rem;
+}
+.my-4 {
+    border-color: #f1e8da;
+}
+.lead {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:5px 5px 8px #000;
+}
+.btn-warning {
+    background-color: #f1e8da!important;
+    border-color: #6a2726;
+}
+.btn-warning:hover {
+    background-color: #ceb4a5!important;
+}
+.btn-dark {
+    background-color: #6a2726!important;
+    border: none;
+}
+.btn-dark:hover {
+    background-color: #ceb4a5!important;
+    color: #000;
+}
+
+.footer {
+    margin-top: 1rem;
+    font-size: .9rem;
+    color: #666;
+}
+.footer a:hover {
+    color: #6a2726;
+}
+.footer a:visited {
+    color: #666;
+}
+main {
+    margin-top: 20px;
+}
+h4 {
+    color: #6a2726;
+}
