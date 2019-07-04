@@ -30,5 +30,21 @@ var friends = module.exports = [
       5,
       2
     ]
+  },
+  {
+    "name": "George",
+    "photo": "https://www.creativelive.com/blog/wp-content/uploads/2018/02/basic-portrait-photography-6.jpg",
+    "scores:":[
+      2,
+      4,
+      5,
+      2,
+      3,
+      1,
+      5,
+      4,
+      3,
+      1
+    ]
   }
 ]
