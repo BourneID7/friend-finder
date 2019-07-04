@@ -14,5 +14,21 @@ var friends = module.exports = [
         4,
         1
       ]
+  },
+  {
+    "name":"Maggie",
+    "photo":"https://i.udemycdn.com/course/750x422/1396760_6efa.jpg",
+    "scores":[
+      1,
+      3,
+      5,
+      5,
+      2,
+      3,
+      1,
+      2,
+      5,
+      2
+    ]
   }
 ]
