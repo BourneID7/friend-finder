@@ -1,7 +1,7 @@
 var friends = module.exports = [
     {
     "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://s23527.pcdn.co/wp-content/uploads/2019/04/007-1-745x596.jpg.optimal.jpg",
     "scores":[
         5,
         1,
@@ -32,9 +32,9 @@ var friends = module.exports = [
     ]
   },
   {
-    "name": "George",
-    "photo": "https://www.creativelive.com/blog/wp-content/uploads/2018/02/basic-portrait-photography-6.jpg",
-    "scores:":[
+    "name":"George",
+    "photo":"https://www.creativelive.com/blog/wp-content/uploads/2018/02/basic-portrait-photography-6.jpg",
+    "scores":[
       2,
       4,
       5,

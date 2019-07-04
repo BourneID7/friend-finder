@@ -43,5 +43,4 @@ app.post("/api/friends", function(req, res){
   // push new user data to friends array
   friends.push(newFriend);
   res.json(bestMatch);
-  // module.exports = {bestMatch};
 });
