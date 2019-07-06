@@ -1,17 +1,6 @@
 $('#ModalCenter').modal({ show: false})
 $("#submit").on("click", function(event) {
     event.preventDefault();
-        // convert question responses from string to int
-        // var q1 = parseInt($("#question1").val());
-        // var q2 = parseInt($("#question2").val());
-        // var q3 = parseInt($("#question3").val());
-        // var q4 = parseInt($("#question4").val());
-        // var q5 = parseInt($("#question5").val());
-        // var q6 = parseInt($("#question6").val());
-        // var q7 = parseInt($("#question7").val());
-        // var q8 = parseInt($("#question8").val());
-        // var q9 = parseInt($("#question9").val());
-        // var q10 = parseInt($("#question10").val());
 
         var newFriend = {
         name: $("#name").val().trim(),
