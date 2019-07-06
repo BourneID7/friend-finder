@@ -13,31 +13,42 @@ app.post("/api/friends", function(req, res){
     var userScores = newFriend.scores;
     console.log("User scores: " + userScores);
 
-    // empty variables use to push data to each time a friend is found with a closer match score
-    var totalDiff = 0;
-
     var bestMatch = {
       name: "",
       photo: "",
       friendDiff: 1000
     };
 
-    for (i = 0; i < friends.length; i++) {
-        
-      //loop through both friends array & each friend's scores array
-      for (var j = 0; j < friends[i].scores[j]; j++) {
-        totalDiff += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]) );
+    friends.forEach(function(currentValue) {
+      // currentValue is current index of friends array
+      console.log(currentValue);
+      for (var i = 0; i < currentValue.scores.length; i++) {
+
+          // empty variables use to push data to each time a friend is found with a closer match score
+        var totalDiff = 0;
+        eachDiff = 0;
+        var scoresDiffArr = [];
+
+        // totalDiff += Math.abs(parseInt(userScores[i]) - parseInt(currentValue.scores[i]) ); 
+        console.log("diff of " + currentValue.name + ": " + Math.abs(parseInt(userScores[i]) - parseInt(currentValue.scores[i]) ));
+        eachDiff = Math.abs(parseInt(userScores[i]) - parseInt(currentValue.scores[i]) );
+        scoresDiffArr.push(eachDiff);
+        console.log(scoresDiffArr);
+        console.log(" total difference: " + scoresDiffArr.reduce((a, b) => a + b, 0));
+
+        totalDiff = scoresDiffArr.reduce((a, b) => a + b, 0);
+
+        // console.log("Total diff of " + currentValue.name + ": " + totalDiff);
 
         if (totalDiff <= bestMatch.friendDiff) {
-
-          //update best match with current index
-          bestMatch.name = friends[i].name;
-          bestMatch.photo = friends[i].photo;
+          //update best match with currentValue
+          bestMatch.name = currentValue.name;
+          bestMatch.photo = currentValue.photo;
           bestMatch.friendDiff = totalDiff;
-
         };
       };
-    };
+    });
+
     console.log("Best match: " + bestMatch.name);
 
   // push new user data to friends array

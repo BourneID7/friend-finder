@@ -1,5 +1,21 @@
 var friends = module.exports = [
-    {
+  {
+    "name":"George",
+    "photo":"https://www.creativelive.com/blog/wp-content/uploads/2018/02/basic-portrait-photography-6.jpg",
+    "scores":[
+      2,
+      4,
+      5,
+      2,
+      3,
+      1,
+      5,
+      4,
+      3,
+      1
+    ]
+  },
+  {
     "name":"Ahmed",
     "photo":"https://s23527.pcdn.co/wp-content/uploads/2019/04/007-1-745x596.jpg.optimal.jpg",
     "scores":[
@@ -29,22 +45,6 @@ var friends = module.exports = [
       2,
       5,
       2
-    ]
-  },
-  {
-    "name":"George",
-    "photo":"https://www.creativelive.com/blog/wp-content/uploads/2018/02/basic-portrait-photography-6.jpg",
-    "scores":[
-      2,
-      4,
-      5,
-      2,
-      3,
-      1,
-      5,
-      4,
-      3,
-      1
     ]
   }
 ]
